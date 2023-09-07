@@ -14,8 +14,8 @@
 # 1.
 # num = int(input("세자리 정수 입력 : "))
 # a = num // 100 # 백의 자리
-# b = num % 100 / 10 # 십의 자리
-# c = num % 100 % 10 # 일의 자리
+# b = num % 100 // 10 # 십의 자리
+# c = num % 10 # 일의 자리
 # if a > b:
 #     if a > c:
 #         print(a)
@@ -41,5 +41,4 @@
 s = input("s 문자열을 입력하세요 : ")
 k = input("k 문자열을 입력하세요 : ")
 n = int(input("잘라낼 문자열의 길이를 입력하세요 : "))
-k = s[n+1:] + k
-print(k)
+print(s[-n:] + k)
